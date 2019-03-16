@@ -6,7 +6,8 @@ import {
 	UsingStyles,
 	Clipping,
 	BorderRadius,
-	LoadingCard
+	LoadingCard,
+	Gridding
 } from './katas/';
 
 const AppNavigator = createStackNavigator(
@@ -45,6 +46,12 @@ const AppNavigator = createStackNavigator(
 			screen: LoadingCard,
 			navigationOptions: {
 				title: 'Loading Card'
+			}
+		},
+		Gridding: {
+			screen: Gridding,
+			navigationOptions: {
+				title: 'Gridding'
 			}
 		}
 	},
