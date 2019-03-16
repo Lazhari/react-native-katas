@@ -1,7 +1,7 @@
 import { createAppContainer, createStackNavigator } from 'react-navigation';
 
 import HomeScreen from './Home';
-import { UsingText, UsingStyles, Clipping } from './katas/';
+import { UsingText, UsingStyles, Clipping, BorderRadius } from './katas/';
 
 const AppNavigator = createStackNavigator(
 	{
@@ -27,6 +27,12 @@ const AppNavigator = createStackNavigator(
 			screen: Clipping,
 			navigationOptions: {
 				title: 'Clipping'
+			}
+		},
+		BorderRadius: {
+			screen: BorderRadius,
+			navigationOptions: {
+				title: 'Border Radius'
 			}
 		}
 	},
