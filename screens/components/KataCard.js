@@ -8,7 +8,7 @@ export default class KataCard extends Component {
 		return (
 			<View style={styles.card}>
 				<View style={styles.iconContainer}>
-					<Ionicons name={icon} size={32} color="white" />
+					<Ionicons name={icon} size={24} color="white" />
 				</View>
 				<Text style={styles.title}>{kataTitle}</Text>
 			</View>

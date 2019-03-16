@@ -5,48 +5,65 @@ import KataCard from './components/KataCard';
 
 const katas = [
 	{
+		icon: 'md-create',
 		kataTitle: 'Using Text'
 	},
 	{
+		icon: 'md-color-palette',
 		kataTitle: 'Using Styles'
 	},
 	{
+		icon: 'md-crop',
 		kataTitle: 'Clipping'
 	},
 	{
+		icon: 'md-egg',
 		kataTitle: 'Border Radius'
 	},
 	{
+		icon: 'md-hourglass',
 		kataTitle: 'Loading Card'
 	},
 	{
+		icon: 'md-grid',
 		kataTitle: 'Gridding'
 	},
 	{
+		icon: 'md-calculator',
 		kataTitle: 'Flex Size'
 	},
 	{
+		icon: 'md-color-fill',
 		kataTitle: 'Fill All'
 	},
 	{
+		icon: 'md-compass',
 		kataTitle: 'Direction'
 	},
 	{
+		icon: 'md-list',
 		kataTitle: 'Alignment Axis'
 	},
 	{
+		icon: 'md-code-working',
 		kataTitle: 'Alignment'
 	},
 	{
+		icon: 'md-stats',
 		kataTitle: 'Simple Chart'
 	},
 	{
+		icon: 'md-happy',
 		kataTitle: 'Profile Screen'
 	},
 	{
+		icon: 'md-contact',
 		kataTitle: 'Contact Card'
 	},
-	{ kataTitle: 'Calendar Month' }
+	{
+		icon: 'md-calendar',
+		kataTitle: 'Calendar Month'
+	}
 ];
 
 export default class Home extends Component {
