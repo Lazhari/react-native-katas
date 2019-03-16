@@ -1,7 +1,13 @@
 import { createAppContainer, createStackNavigator } from 'react-navigation';
 
 import HomeScreen from './Home';
-import { UsingText, UsingStyles, Clipping, BorderRadius } from './katas/';
+import {
+	UsingText,
+	UsingStyles,
+	Clipping,
+	BorderRadius,
+	LoadingCard
+} from './katas/';
 
 const AppNavigator = createStackNavigator(
 	{
@@ -33,6 +39,12 @@ const AppNavigator = createStackNavigator(
 			screen: BorderRadius,
 			navigationOptions: {
 				title: 'Border Radius'
+			}
+		},
+		LoadingCard: {
+			screen: LoadingCard,
+			navigationOptions: {
+				title: 'Loading Card'
 			}
 		}
 	},
