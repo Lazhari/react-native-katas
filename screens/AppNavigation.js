@@ -1,8 +1,7 @@
 import { createAppContainer, createStackNavigator } from 'react-navigation';
 
 import HomeScreen from './Home';
-import UsingText from './katas/UsingText';
-import UsingStyles from './katas/UsingStyles';
+import { UsingText, UsingStyles, Clipping } from './katas/';
 
 const AppNavigator = createStackNavigator(
 	{
@@ -22,6 +21,12 @@ const AppNavigator = createStackNavigator(
 			screen: UsingStyles,
 			navigationOptions: {
 				title: 'Using Styles'
+			}
+		},
+		Clipping: {
+			screen: Clipping,
+			navigationOptions: {
+				title: 'Clipping'
 			}
 		}
 	},
