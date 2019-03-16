@@ -1,6 +1,7 @@
 import { createAppContainer, createStackNavigator } from 'react-navigation';
 
 import HomeScreen from './Home';
+import UsingText from './katas/UsingText';
 
 const AppNavigator = createStackNavigator(
 	{
@@ -9,10 +10,12 @@ const AppNavigator = createStackNavigator(
 			navigationOptions: {
 				header: null
 			}
+		},
+		UsingText: {
+			screen: UsingText
 		}
 	},
 	{
-		header: 'none',
 		headerMode: 'none',
 		initialRouteName: 'Home'
 	}

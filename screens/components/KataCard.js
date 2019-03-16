@@ -1,17 +1,19 @@
 import React, { Component } from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet, TouchableHighlight } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 
 export default class KataCard extends Component {
 	render() {
-		const { icon = 'md-pulse', kataTitle } = this.props;
+		const { icon = 'md-pulse', kataTitle, navigate, id } = this.props;
 		return (
-			<View style={styles.card}>
-				<View style={styles.iconContainer}>
-					<Ionicons name={icon} size={24} color="white" />
-				</View>
-				<Text style={styles.title}>{kataTitle}</Text>
-			</View>
+			<TouchableHighlight style={styles.card} onPress={() => navigate(id)}>
+				<>
+					<View style={styles.iconContainer}>
+						<Ionicons name={icon} size={24} color="white" />
+					</View>
+					<Text style={styles.title}>{kataTitle}</Text>
+				</>
+			</TouchableHighlight>
 		);
 	}
 }

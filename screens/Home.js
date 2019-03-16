@@ -6,62 +6,77 @@ import KataCard from './components/KataCard';
 
 const katas = [
 	{
+		id: 'UsingText',
 		icon: 'md-create',
 		kataTitle: 'Using Text'
 	},
 	{
+		id: 'UsingStyles',
 		icon: 'md-color-palette',
 		kataTitle: 'Using Styles'
 	},
 	{
+		id: 'Clipping',
 		icon: 'md-crop',
 		kataTitle: 'Clipping'
 	},
 	{
+		id: 'BorderRadius',
 		icon: 'md-egg',
 		kataTitle: 'Border Radius'
 	},
 	{
+		id: 'LoadingCard',
 		icon: 'md-hourglass',
 		kataTitle: 'Loading Card'
 	},
 	{
+		id: 'Gridding',
 		icon: 'md-grid',
 		kataTitle: 'Gridding'
 	},
 	{
+		id: 'FlexSize',
 		icon: 'md-calculator',
 		kataTitle: 'Flex Size'
 	},
 	{
+		id: 'FillAll',
 		icon: 'md-color-fill',
 		kataTitle: 'Fill All'
 	},
 	{
+		id: 'Direction',
 		icon: 'md-compass',
 		kataTitle: 'Direction'
 	},
 	{
+		id: 'AlignmentAxis',
 		icon: 'md-list',
 		kataTitle: 'Alignment Axis'
 	},
 	{
+		id: 'Alignment',
 		icon: 'md-code-working',
 		kataTitle: 'Alignment'
 	},
 	{
+		id: 'SimpleChart',
 		icon: 'md-stats',
 		kataTitle: 'Simple Chart'
 	},
 	{
+		id: 'ProfileScreen',
 		icon: 'md-happy',
 		kataTitle: 'Profile Screen'
 	},
 	{
+		id: 'ContactCard',
 		icon: 'md-contact',
 		kataTitle: 'Contact Card'
 	},
 	{
+		id: 'CalendarMonth',
 		icon: 'md-calendar',
 		kataTitle: 'Calendar Month'
 	}
@@ -77,7 +92,11 @@ export default class Home extends Component {
 				<View style={styles.navigationContainer}>
 					<ScrollView contentContainerStyle={styles.kataListContainer}>
 						{katas.map((kata, index) => (
-							<KataCard {...kata} key={index} />
+							<KataCard
+								{...kata}
+								key={index}
+								navigate={this.props.navigation.navigate}
+							/>
 						))}
 					</ScrollView>
 				</View>
