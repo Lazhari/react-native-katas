@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { View, ScrollView, Text, StyleSheet } from 'react-native';
+import { View, ScrollView, Text, StyleSheet, StatusBar } from 'react-native';
+import { SafeAreaView } from 'react-navigation';
 
 import KataCard from './components/KataCard';
 
@@ -88,6 +89,7 @@ export default class Home extends Component {
 const styles = StyleSheet.create({
 	container: {
 		flex: 1,
+		backgroundColor: '#E5E5E5',
 		marginTop: 40,
 		padding: 16
 	},
