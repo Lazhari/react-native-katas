@@ -6,7 +6,11 @@ export default class KataCard extends Component {
 	render() {
 		const { icon = 'md-pulse', kataTitle, navigate, id } = this.props;
 		return (
-			<TouchableHighlight style={styles.card} onPress={() => navigate(id)}>
+			<TouchableHighlight
+				style={styles.card}
+				onPress={() => navigate(id)}
+				underlayColor="#F0F1F4"
+			>
 				<>
 					<View style={styles.iconContainer}>
 						<Ionicons name={icon} size={24} color="white" />
