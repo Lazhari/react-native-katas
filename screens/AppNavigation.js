@@ -12,12 +12,23 @@ const AppNavigator = createStackNavigator(
 			}
 		},
 		UsingText: {
-			screen: UsingText
+			screen: UsingText,
+			navigationOptions: {
+				title: 'Using Text'
+			}
 		}
 	},
 	{
-		headerMode: 'none',
-		initialRouteName: 'Home'
+		initialRouteName: 'Home',
+		defaultNavigationOptions: {
+			headerStyle: {
+				backgroundColor: '#FFFFFF'
+			},
+			headerTintColor: '#171D33',
+			headerTitleStyle: {
+				fontWeight: 'bold'
+			}
+		}
 	}
 );
 
